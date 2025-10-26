@@ -1,17 +1,15 @@
-import { Client, Databases, Query, Storage } from "appwrite";
+import { Client, Databases, Query } from "appwrite";
 import config from "../config/config";
 
 export class AppwriteServices {
   client: any;
   databases: any;
-  bucket: any;
   constructor() {
     this.client = new Client()
       .setProject(config.appwriteProjectId)
       .setEndpoint(config.appwriteUrl);
 
     this.databases = new Databases(this.client);
-    this.bucket = new Storage(this.client);
   }
 
   async createPost({
@@ -122,3 +120,8 @@ export class AppwriteServices {
     }
   }
 }
+
+
+const appWriteServiceObject = new AppwriteServices()
+
+export default appWriteServiceObject
