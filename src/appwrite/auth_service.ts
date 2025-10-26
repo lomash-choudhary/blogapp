@@ -59,7 +59,6 @@ export class AuthService {
     } catch (error) {
         console.log(`Appwrite service :: getCurrentLoggedInUser :: error ${error}`)
     }
-
     return null;
   }
 
