@@ -6,10 +6,10 @@ const CustomInput = React.forwardRef(function Input(
     type = "text",
     className = "",
     ...props
-  }: {
-    label: string;
-    type: string;
-    className: string;
+  }: React.InputHTMLAttributes<HTMLInputElement> & {
+    label?: string;
+    type?: string;
+    className?: string;
   },
   ref: React.Ref<HTMLInputElement>
 ): JSX.Element {

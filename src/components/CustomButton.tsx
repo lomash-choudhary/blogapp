@@ -9,10 +9,10 @@ const CustomButton = ({
   ...props
 }: {
   children: React.ReactNode;
-  type: string;
-  bgColor: string;
-  textColor: string;
-  className: string;
+  type?: string;
+  bgColor?: string;
+  textColor?: string;
+  className?: string;
 }) => {
   return (
     <button
