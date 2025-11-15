@@ -3,9 +3,9 @@ import fileUploadServiceObject from "../appwrite/file_uplod_service"
 
 
 const PostCard = ({$id, title, featuredImage}:{
-    $id:any,
-    title:any,
-    featuredImage:any
+    $id?:any,
+    title?:any,
+    featuredImage?:any
 }) => {
   return (
     <Link to={`/post/${$id}`}>

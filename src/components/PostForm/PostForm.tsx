@@ -12,7 +12,7 @@ import CustomButton from "../CustomButton";
 const PostForm = ({
   post,
 }: {
-  post: {
+  post?: {
     title: "";
     slug: "";
     content: "";
